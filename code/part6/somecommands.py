@@ -15,6 +15,7 @@ class SomeCommands(commands.Cog):
 
     @commands.command(name="setstatus")
     async def setstatus(self, ctx: commands.Context, *, text: str):
+        """Set the bot's status"""
         await self.bot.change_presence(activity=discord.Game(text))
 
 
