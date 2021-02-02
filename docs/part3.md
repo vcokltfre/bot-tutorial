@@ -1,6 +1,6 @@
 # Part 3 - Hello, World!
 
-In this part, I'll show you the basics of how to create a super simple bot and get it connected to Discord. From now on it is assume that you have the [discord.py](https://pypi.org/project/discord.py/) library installed, along with a version of Python later than 3.6.
+In this part, I'll show you the basics of how to create a super simple bot and get it connected to Discord. From now on it is assumed that you have the [discord.py](https://pypi.org/project/discord.py/) library installed, along with a version of Python later than 3.6.
 
 ---
 
@@ -18,7 +18,7 @@ bot = commands.Bot(command_prefix="!")
 
 As you can see, the first thing we need to do is tell the bot which command prefix to use, else how can it respond to commands? This prefix can actually be one of many things, but for the sake of this tutorial I'll just be using the string `"!"` for the prefix. Just know that it is possible to create more complex prefixes, such as a different prefix for each server.
 
-While creating the bot is also where we would specify what are known as gateway intents - essentially telling the gateway which events we want. For now we'll ignore this, however it will be covered later in the tutorial when we need to use events not given with the defaukt intents.
+While creating the bot is also where we would specify what are known as gateway intents - essentially telling the gateway which events we want. For now we'll ignore this, however it will be covered later in the tutorial when we need to use events not given with the default intents.
 
 Next, we want to add a command to the bot so that it can do something. The first command we'll add is a !hello command, that responds with "Hello, world!"
 
@@ -34,7 +34,7 @@ That's quite a lot to take in, even if you're quite familiar with Python, so all
 - `async def hello_world(ctx: commands.Context):` defines a hello_world function that takes 1 argument - ctx - which is a Context object that's passed with **every** command. All commands will be passed a Context object as their first argument.
 - `await ctx.send("Hello, world!")` makes an API call to Discord to send a message to the channel the command was run in with the content "Hello, world!"
 
-Next, we need to run the bot with ts token that you got from the developer portal in [part 1](./part1.md):
+Next, we need to run the bot with its token that you got from the developer portal in [part 1](./part1.md):
 
 ```py
 bot.run("your_token_here")
