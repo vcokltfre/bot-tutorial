@@ -27,7 +27,7 @@ def setup(bot: commands.Bot):
     bot.add_cog(SomeCommands(bot))
 ```
 
-To add the new status command we want to put it just after the ping command - inside the class. For this command well be introduced to a couple of new things. Firstly, we're going to need to import the main discord&#46;py library to use a certain class from it, and second this command needs to take in text to set the status to.
+To add the new status command we want to put it just after the ping command - inside the class. For this command we'll be introduced to a couple of new things. Firstly, we're going to need to import the main discord&#46;py library to use a certain class from it, and second this command needs to take in text to set the status to.
 
 To start with, you'll need to add this line to the top of your file to import the main discord&#46;py library:
 
@@ -49,7 +49,7 @@ The first new thing here is this bit:
 ```
 which essentially takes all user input after the command and passes it as the text parameter. This is where it's useful to have the typehints I mentioned earlier, as it tells discord&#46;py's converters which type to convert the arguments given into.
 
-Next, we have a change_presence function on the bot. In Discord a status is more broadly known as a presence and can include info such as Spotify statuses for non bot users. change_presence, as its name suggests, changes the bot's status to the value given. In this case we give it a discord.Game object whose name is whatever text we gave, which will make the status look like "playing {text}"
+Next, we have a change_presence function on the bot. In Discord a status is more broadly known as a presence and can include info such as Spotify statuses for non bot users. change_presence, as its name suggests, changes the bot's status to the value given. In this case we give it a discord.Game object whose name is whatever text we gave, which will make the status look like "Playing {text}"
 
 Note that in this function we dont use ctx, but it still needs to be part of the function defintion, as discord&#46;py always passes it first in commands.
 

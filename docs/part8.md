@@ -28,7 +28,7 @@ Again, I'll show the updated code, and then explain afterwards what was changed 
 
 Firstly, we've imported the time module from the Python standard library. This means we can get the current UNIX time so that we can time the execution of sending the message, which will give us the API latency.
 
-We set start_time to the time, then we send a message saying that we're testing ping, and then record the end time. This is all fairly simple python or content we've covered earlier in the turorial, the main difference being that we store the message object returned by the API in the message variable.
+We set start_time to the time, then we send a message saying that we're testing ping, and then record the end time. This is all fairly simple Python, or content we've covered earlier in the turorial, the main difference being that we store the message object returned by the API in the message variable.
 
 Now we see a new function we haven't used before, editing an existing message. Unlike sending a message, we need to specify that we're editing the content of the message. As with the previous ping command we show the websocket latency, but now we also show the latency to the API, calculated in much the same way.
 

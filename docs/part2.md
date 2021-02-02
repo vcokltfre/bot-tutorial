@@ -10,11 +10,11 @@ The Discord gateway is how your bot receives events from Discord, so understandi
 
 The gateway is actually a fairly simple websocket connection to Discord - basically a web request that connects a socket, which then stays open so that Discord can send events to you, rather than you fetching events from Discord. Neat, huh?
 
-While you're using discord&#46;py you don't actually have to worry about connecting to the gateway yourself, because the library does that all for you, but I believe nonetheless it's useful to ahve an understanding of how the underlying architecture works, which often makes the higher level stuff make more sense.
+While you're using discord&#46;py you don't actually have to worry about connecting to the gateway yourself, because the library does that all for you, but I believe nonetheless it's useful to have an understanding of how the underlying architecture works, which often makes the higher level stuff make more sense.
 
-When discord&#46;py receives an event from the gateway it will have, an OPCODE and some event data, and a couple of other piece of data we won't worry about. These tell your client what to do with the payload, such as hearbeating to the gateway to show the client is still alive.
+When discord&#46;py receives an event from the gateway it will have an OPCODE and some event data, and a couple of other pieces of data we won't worry about for now. These tell your client what to do with the payload, such as hearbeating to the gateway to show the client is still alive.
 
-If the OPCODE passed is 0, that means it's a dispatch event, and those are the ones we're interested in, because they contain the interestive events like message creations, member joins, and any other typical Discord event like them.
+If the OPCODE passed is 0, that means it's a dispatch event, and those are the ones we're interested in, because they contain the interesting events like message creations, member joins, and any other typical Discord event like them.
 
 That's pretty much it for the gateway at this level. There is a lot more detail that can be talked about with the gateway, but that's out of the scope of this tutorial, and if you're interested in further reading the official Discord documentation for the gateway can be found [here.](https://discord.com/developers/docs/topics/gateway)
 
@@ -24,7 +24,7 @@ The Discord API is how out bot talks back to Discord. We've got the events from 
 
 Well, bots are much the same, only they don't have access to all the same endpoints as the user client (although, that being said they do have access to a couple of exclusive endpoints, like role-locking emoji!).
 
-Again, as with the gateway, discord&#46;py handles interaction with the API and abstracts away most of the complexity ike passing tokens in headers and handling ratelimits.
+Again, as with the gateway, discord&#46;py handles interaction with the API and abstracts away most of the complexity like passing tokens in headers and handling ratelimits.
 
 ## 3: Discord Terminology
 

@@ -8,7 +8,7 @@ Now that you're here you can create an application. To do this you just need to 
 
 ![Create an Application"](https://github.com/vcokltfre/bot-tutorial/raw/master/images/dev_portal_2.png "Create an Application")
 
-Be sure to enter a suitable name for your bot - make sure to follow the Discord terms of service, so no slurs or harassment. To be clear, this applies throughout this tutorial also, and you should ake sure to follow the [Terms of Service](https://dis.gd/terms) and [Developer Terms](https://discord.com/developers/docs/legal) when creating your bot. Notably that means things like:
+Be sure to enter a suitable name for your bot - make sure to follow the Discord terms of service, so no slurs or harassment. To be clear, this applies throughout this tutorial also, and you should make sure to follow the [Terms of Service](https://dis.gd/terms) and [Developer Terms](https://discord.com/developers/docs/legal) when creating your bot. Notably that means things like:
 
 - Not abusing the API.
 - Not harassing users.
@@ -24,7 +24,7 @@ Now that you've created your application, you'll see a screen like this:
 
 ![General Information](https://github.com/vcokltfre/bot-tutorial/raw/master/images/dev_portal_3.png "General Information")
 
-Although there is quite a lot on this screen, it's out of scope for the beginning of this tutorial, so for now we'll gnore it and move to the `Bot` tab on the left hand side, marked by a jigsaw piece. If you click this tab you'll see a screen asking you to create a new bot. When you click this you'll be prompted if you want to continue because you wont be able to delete the bot after (because bots are too cool to destroy, of course!). Click yes and you'll be taken to a screen that looks like this:
+Although there is quite a lot on this screen, it's out of scope for the beginning of this tutorial, so for now we'll ignore it and move to the `Bot` tab on the left hand side, marked by a jigsaw piece. If you click this tab you'll see a screen asking you to create a new bot. When you click this you'll be prompted if you want to continue because you wont be able to delete the bot after (because bots are too cool to destroy, of course!). Click yes and you'll be taken to a screen that looks like this:
 
 ![Bot](https://github.com/vcokltfre/bot-tutorial/raw/master/images/dev_portal_4.png "Bot")
 

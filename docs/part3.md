@@ -1,6 +1,6 @@
 # Part 3 - Hello, World!
 
-In this part, I'll show you the basics of how to create a super simple bot and get it connected to Discord. From now on it is assumed that you have the [discord.py](https://pypi.org/project/discord.py/) library installed, along with a version of Python later than 3.6.
+In this part, I'll show you the basics of how to create a super simple bot and get it connected to Discord. From now on it is assumed that you have the [discord.py](https://pypi.org/project/discord.py/) library installed, along with a version of Python which is 3.6 or above, as versions before this don't have all the features used in this tutorial.
 
 ---
 
@@ -10,7 +10,7 @@ The first step to creating a bot is to import the Bot class so that we can creat
 from discord.ext import commands # This is the part of discord.py that helps us build bots
 ```
 
-Epic! Now we can use the discord.ext.commands module, we need to actually create a bot instance that will run our commands:
+Epic! Now that we can use the discord.ext.commands module, we need to actually create a bot instance that will run our commands:
 
 ```py
 bot = commands.Bot(command_prefix="!")
@@ -40,7 +40,7 @@ Next, we need to run the bot with its token that you got from the developer port
 bot.run("your_token_here")
 ```
 
-This runs the bot with your token, and asbtracts away creating an event loop and running the bot through coroutines.
+This runs the bot with your token, and abstracts away creating an event loop and running the bot through coroutines.
 
 At this point, your bot should be entirely functional, and if you start it up in your preferred method, you should see it come online and answer commands.
 

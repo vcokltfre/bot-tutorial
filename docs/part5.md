@@ -1,6 +1,6 @@
 # Part 5 - Cogs
 
-Cogs are a very important part of discord&#46;py which allow you to organise your commands into groups - not to be confused with actual comand groups, which will be explained later in the tutorial.
+Cogs are a very important part of discord&#46;py which allow you to organise your commands into groups - not to be confused with actual command groups, which will be explained later in the tutorial.
 
 Cogs represent a fairly drastic change in the way you write commands and bots, so it's good that we're getting into them here before you're too used to sticking the commands in the main file of the bot.
 
@@ -26,7 +26,7 @@ class SomeCommands(commands.Cog):
 
 If you didn't know yet, bot: commands.Bot is known as typehinting, and it gives the IDE you're using (or sometimes discord&#46;py itself) a hint as to what type the argument is. You'll see this come in handy later on when we add arguments of certain types to out commands.
 
-Now we want to add back the commands we had before. For the sake of simplicity, we wont add back the hello command, it was a good starting point but in reality commands with static output arent that interesting, so we probably wont use them much more.
+Now we want to add back the commands we had before. For the sake of simplicity, we wont add back the hello command, it was a good starting point but in reality commands with static output aren't that interesting, so we probably wont use them much more.
 
 In cogs, commands have their own way of being defined, which is using the comamnds.command() decorator. It serves the same function as bot.command(), however it now works in cogs too:
 
@@ -51,9 +51,9 @@ That's it, we've added the cog to the bot, now we can run it in the normal way a
 bot.run("your_token_here")
 ```
 
-Great! It works! But we haven't really solved the problem we had before, which was having everything in one file, in fact we've added to the amount of code in the single file, which is doing the exact opposite of what we were trying to do. So, how do we solve this? Well, more files of course! discord&#46;py's Bot provides another useful function which is load_extension, which will load cogs from another file.
+Great! It works! But we haven't really solved the problem we had before, which was having everything in one file, in fact we've added to the amount of code in the single file, which is doing the exact opposite of what we were trying to do. So, how do we solve this? Well, with more files of course! discord&#46;py's Bot provides another useful function which is load_extension(), which will load cogs from another file.
 
-To start with, let's set up the main bot file, let's call it bot&#46;py from now on with the following code (this is not the final code for this file, we'll update it in a bit to reflect the changes we are about to make):
+To start with, let's set up the main bot file, we'll call it bot&#46;py from now on with the following code (this is not the final code for this file, we'll update it in a bit to reflect the changes we are about to make):
 
 ```py
 from discord.ext import commands
@@ -86,7 +86,7 @@ def setup(bot: commands.Bot):
     bot.add_cog(SomeCommands(bot))
 ```
 
-And that's most of the work done to move it into its own file, we just need to update bot&#46;py to make it load this cog, because currently it has no idea there's a cog here that it needs to load. To do this we'll use the load_extension function I mentioned earlier:
+And that's most of the work done to move it into its own file, we just need to update bot&#46;py to make it load this cog, because currently it has no idea there's a cog here that it needs to load. To do this we'll use the load_extension() function I mentioned earlier:
 
 ```py
 from discord.ext import commands
@@ -98,4 +98,4 @@ bot.load_extension("somecommands") # Note, we don't need the .py file extension
 bot.run("your_token_here")
 ```
 
-That's it for the basics of cogs, you now know how to create a cog, create commands in that cog, and then load the cog into the bot! Now you're ready to move onto [Part 6 - Online!], or you can take a look at the full code for this part using [one file](../code/part5/one_file.py) or [multiple files](../code/part5/multiple_files/bot.py).
+That's it for the basics of cogs, you now know how to create a cog, create commands in that cog, and then load the cog into the bot! Now you're ready to move onto [Part 6 - Online!](./part6.md), or you can take a look at the full code for this part using [one file](../code/part5/one_file.py) or [multiple files](../code/part5/multiple_files/bot.py).
