@@ -16,6 +16,7 @@ Preamble over, you can start learning now in [Part 1 - Creating a Bot User,](doc
 - [Part 6 - Online!](docs/part6.md)
 - [Part 7 - Welcome](docs/part7.md)
 - [Part 8 - A Better Ping Command](docs/part8.md)
+- [Part 9 - What Did That Message Say?](docs/part9.md)
 
 ## Issues
 
