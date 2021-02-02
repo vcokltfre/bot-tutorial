@@ -1,0 +1,101 @@
+# Part 5 - Cogs
+
+Cogs are a very important part of discord&#46;py which allow you to organise your commands into groups - not to be confused with actual comand groups, which will be explained later in the tutorial.
+
+Cogs represent a fairly drastic change in the way you write commands and bots, so it's good that we;re getting into them here before you're too used to sticking the commands in the main file of the bot.
+
+To start out with coge we're going to abandon the code from the previous sections largely in favour of new commands tailored to cogs. First, I'll show how to make a cog still in the main file of the bot, then I'll show you how to move it into a separate file completely.
+
+First, as with the previous samples, we need to import the commands module of discord&#46;py and create a bot:
+
+```py
+from discord.ext import commands
+
+bot = commands.Bot(command_prefix="!")
+```
+
+Next, we need to create a class that inherites from commands.Cog that we can put our commands in, and a constructor that takes in the bot as its only argument and saves it (at this point I'll also start adding docstrings, those things between """ """ - that explain what cogs or commands are for, and are used in the built in help command):
+
+```py
+class SomeCommands(commands.Cog):
+    """A couple of simple commands"""
+
+    def __init__(self, bot: commands.Bot):
+        self.bot = bot
+```
+
+If you didn't know yet, bot: commands.Bot is known as typehinting, and it gives the IDE you're using (or sometimes discord&#46;py itself) a hint as to what type the argument is. You'll see this come in handy later on when we add arguments of certain types to out commands.
+
+Now we want to add back the commands we had before. For the sake of simplicity, we wont add back the hello command, it was a good starting point but in reality commands with static output arent that interesting, so we probably wont use them much more.
+
+In cogs, commands have their own way of being defined, which is using the comamnds.command() decorator. It serves the same function as bot.command(), however it now works in cogs too:
+
+```py
+    @commands.command(name="ping")
+    async def ping(self, ctx: commands.Context):
+        """Get the bot's current websocket latency"""
+        await ctx.send(f"Pong! {round(bot.latency * 1000)}ms")
+```
+
+Note that we're now using self as the first argument of the command function, because we're now in a class.
+
+Now we have another step we have to do before we run the bot (and I promise this extra effort will pay off in the long run when you understand the code better and can find things easier!) which is to add the cog to the bot. We do that like this:
+
+```py
+bot.add_cog(SomeCommands(bot))
+```
+
+That's it, we've added the cog to the bot, now we can run it in the normal way and test out our ping command now using cogs!
+
+```py
+bot.run("your_token_here")
+```
+
+Great! It works! But we haven't really solved the problem we had before, which was having everything in one file, in fact we've added to the amount of code in the single file, which is doing the exact opposite of what we were trying to do. So, how do we solve this? Well, more files of course! discord&#46;py's Bot provides another useful function which is load_extension, which will load cogs from another file.
+
+To start with, let's set up the main bot file, let's call it bot&#46;py from now on with the following code (this is not the final code for this file, we'll update it in a bit to reflect the changes we are about to make):
+
+```py
+from discord.ext import commands
+
+bot = commands.Bot(command_prefix="!")
+
+bot.run("your_token_here")
+```
+
+Basically, we've stripped most of the logic out because we're going to move that to another file, somecomamnds&#46;py, so let's create that file and add some code:
+
+```py
+from discord.ext import commands # Again, we need this imported
+
+
+class SomeCommands(commands.Cog):
+    """A couple of simple commands"""
+
+    def __init__(self, bot: commands.Bot):
+        self.bot = bot
+
+    @commands.command(name="ping")
+    async def ping(self, ctx: commands.Context):
+        """Get the bot's current websocket latency"""
+        await ctx.send(f"Pong! {round(self.bot.latency * 1000)}ms") # It's now self.bot.latency
+
+
+# Now, we need to set up this cog somehow, and we do that by making a setup function:
+def setup(bot: commands.Bot):
+    bot.add_cog(SomeCommands(bot))
+```
+
+And that's most of the work done to move it into its own file, we just need to update bot&#46;py to make it load this cog, because currently it has no idea there's a cog here that it needs to load. To do this we'll use the load_extension function I mentioned earlier:
+
+```py
+from discord.ext import commands
+
+bot = commands.Bot(command_prefix="!")
+
+bot.load_extension("somecommands") # Note, we don't need the .py file extension
+
+bot.run("your_token_here")
+```
+
+That's it for the basics of cogs, you now know how to create a cog, create commands in that cog, and then load the cog into the bot! Now you're ready to move onto [Part 6 - Online!], or you can take a look at the full code for this part using [one file](../code/part5/one_file.py) or [multiple files](../code/part5/multiple_files/bot.py).
