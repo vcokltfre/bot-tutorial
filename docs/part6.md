@@ -2,9 +2,9 @@
 
 You've learned how to make commands, and how to make cogs, so now that you know how to use both, let's make something a little more complicated and useful - a command that sets your bot's status.
 
-For this part we'll start off with the same files we ended with in the last part, which means we'll be adding our new command to somecommands.py, and in fact we won't even need to change the main bot file, that can stay just as it is.
+For this part we'll start off with the same files we ended with in the last part, which means we'll be adding our new command to somecommands&#46;py, and in fact we won't even need to change the main bot file, that can stay just as it is.
 
-To recap, here's the somecommands.py file from the last part:
+To recap, here's the somecommands&#46;py file from the last part:
 
 ```py
 from discord.ext import commands # Again, we need this imported
@@ -43,7 +43,11 @@ Now you can add a new command under ping that lets you change the status, which 
         await self.bot.change_presence(activity=discord.Game(text))
 ```
 
-The first new thing here is this bit, ", *, text: str", which essentially takes all user input after the command and passes it as the text parameter. This is where it's useful to have the typehints I mentioned earlier, as it tells discord&#46;py's converters which type to convert the arguments given into.
+The first new thing here is this bit:
+```py
+, *, text: str
+```
+which essentially takes all user input after the command and passes it as the text parameter. This is where it's useful to have the typehints I mentioned earlier, as it tells discord&#46;py's converters which type to convert the arguments given into.
 
 Next, we have a change_presence function on the bot. In Discord a status is more broadly known as a presence and can include info such as Spotify statuses for non bot users. change_presence, as its name suggests, changes the bot's status to the value given. In this case we give it a discord.Game object whose name is whatever text we gave, which will make the status look like "playing {text}"
 
