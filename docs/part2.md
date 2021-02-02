@@ -1,6 +1,6 @@
 # An Overview of Discord
 
-In this part of the tutorial, I'll try to give a rough explanation of how Discord functions. If you already have a decent idea about websockets and APIs, you can likely move on to [Part 3 - Hello, World!](./part3.md)
+In this part of the tutorial, I'll try to give a rough explanation of how Discord functions. If you already have a decent idea about websockets, the API, and Discord terminology, you can likely move on to [Part 3 - Hello, World!](./part3.md)
 
 ## 1: The Discord Gateway
 
@@ -25,5 +25,15 @@ The Discord API is how out bot talks back to Discord. We've got the events from 
 Well, bots are much the same, only they don't have access to all the same endpoints as the user client (although, that being said they do have access to a couple of exclusive endpoints, like role-locking emoji!).
 
 Again, as with the gateway, discord&#46;py handles interaction with the API and abstracts away most of the complexity ike passing tokens in headers and handling ratelimits.
+
+## 3: Discord Terminology
+
+In Discord there are a few special words for things which we need to understand and be able to differentiate between.
+
+|Term|Description|
+|---|---|
+|`guild`|The internal word that Discord has for what you know as a server.|
+|`user`|A Discord user, not containing information relating to a guild.|
+|`member`|A Discord user, with guild context. You'll only receive members if you have the guild members gateway intent enabled, which will be explained later.|
 
 ### And that's pretty much it for this part of the tutorial. I hope this has given you at least some useful knowledge about roughly how Discord works, and now you can move on to [Part 3 - Hello, World!](./part3.md)
