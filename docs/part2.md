@@ -1,0 +1,29 @@
+# An Overview of Discord
+
+In this part of the tutorial, I'll try to give a rough explanation of how Discord functions. If you already have a decent idea about websockets and APIs, you can likely move on to [Part 3 - Hello, World!](./part3.md)
+
+## 1: The Discord Gateway
+
+The Discord gateway is how your bot receives events from Discord, so understanding it can be useful to understand what a bot's capabilities are and what Discord gives you to work with.
+
+### So, what actually **is** this Discord Gateway you keep mentioning?
+
+The gateway is actually a fairly simple websocket connection to Discord - basically a web request that connects a socket, which then stays open so that Discord can send events to you, rather than you fetching events from Discord. Neat, huh?
+
+While you're using discord&#46;py you don't actually have to worry about connecting to the gateway yourself, because the library does that all for you, but I believe nonetheless it's useful to ahve an understanding of how the underlying architecture works, which often makes the higher level stuff make more sense.
+
+When discord&#46;py receives an event from the gateway it will have, an OPCODE and some event data, and a couple of other piece of data we won't worry about. These tell your client what to do with the payload, such as hearbeating to the gateway to show the client is still alive.
+
+If the OPCODE passed is 0, that means it's a dispatch event, and those are the ones we're interested in, because they contain the interestive events like message creations, member joins, and any other typical Discord event like them.
+
+That's pretty much it for the gateway at this level. There is a lot more detail that can be talked about with the gateway, but that's out of the scope of this tutorial, and if you're interested in further reading the official Discord documentation for the gateway can be found [here.](https://discord.com/developers/docs/topics/gateway)
+
+## 2: The API
+
+The Discord API is how out bot talks back to Discord. We've got the events from the gateway and we've processed them, but without the API we can't actually do anything with that. If you've ever sent a message on Discord, added a reaction, renamed a channel, or performed almost any other action, you've made API requetes to the Discord API to do that.
+
+Well, bots are much the same, only they don't have access to all the same endpoints as the user client (although, that being said they do have access to a couple of exclusive endpoints, like role-locking emoji!).
+
+Again, as with the gateway, discord&#46;py handles interaction with the API and abstracts away most of the complexity ike passing tokens in headers and handling ratelimits.
+
+### And that's pretty much it for this part of the tutorial. I hope this has given you at least some useful knowledge about roughly how Discord works, and now you can move on to [Part 3 - Hello, World!](./part3.md)

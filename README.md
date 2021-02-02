@@ -9,6 +9,7 @@ Preamble over, you can start learning now in [Part 1 - Creating a Bot User,](doc
 ## Index
 
 - [Part 1 - Creating a Bot User](docs/part1.md)
+- [Part 2 - An Overview of Discord](docs/part2.md)
 
 ## Issues
 
