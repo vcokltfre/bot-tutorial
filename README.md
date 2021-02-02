@@ -21,3 +21,11 @@ Preamble over, you can start learning now in [Part 1 - Creating a Bot User,](doc
 ## Issues
 
 If you find an issue in this tutorial please create an issue on the repo so that I can rectify it.
+
+## Planned Parts
+
+- [ ] All About Embeds
+- [ ] Command Permissions
+- [ ] More Decorators
+- [ ] Runtime Eval With Jishaku
+- [ ] Custom Decorators
