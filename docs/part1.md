@@ -30,7 +30,7 @@ Although there is quite a lot on this screen, it's out of scope for the beginnin
 
 Now you'll see a button that says `Copy` just under the username box. This button copies your bot's token to your clipboard, make sure to keep this safe, you'll need it to connect with Discord later in the tutorial.
 
-Finally for this part, you need to add your bot to your server. To do this you fist require the Manage Server permission in whatever server you plan on adding it to. You'll want to head over to the OAuth2 tab on the left of the developer portal, marked by a wrench, where you'll be able to choose the scopes you want for your bot. For now, just select the bot scope, as it's all that will be needed for this tutorial - at least at the beginning.
+Finally for this part, you need to add your bot to your server. To do this you first require the Manage Server permission in whatever server you plan on adding it to. You'll want to head over to the OAuth2 tab on the left of the developer portal, marked by a wrench, where you'll be able to choose the scopes you want for your bot. For now, just select the bot scope, as it's all that will be needed for this tutorial - at least at the beginning.
 
 Now you'll want to choose permissions for your bot based on what you want it to do. For WumpusBot, I'll start by giving it Send Messages, Embed Links, Attach Files, Manage Messages, and Add Reactions, although we may need more permissions later, but that will be handled within Discord itself. It is **highly recommended that you never give bots the `Administrator` permission, even if it feels easier than giving the bot just what's needed. Please do not give your bots administrator.** In the end your permissions should look something like this:
 
