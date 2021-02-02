@@ -2,11 +2,11 @@
 
 Cogs are a very important part of discord&#46;py which allow you to organise your commands into groups - not to be confused with actual comand groups, which will be explained later in the tutorial.
 
-Cogs represent a fairly drastic change in the way you write commands and bots, so it's good that we;re getting into them here before you're too used to sticking the commands in the main file of the bot.
+Cogs represent a fairly drastic change in the way you write commands and bots, so it's good that we're getting into them here before you're too used to sticking the commands in the main file of the bot.
 
-To start out with coge we're going to abandon the code from the previous sections largely in favour of new commands tailored to cogs. First, I'll show how to make a cog still in the main file of the bot, then I'll show you how to move it into a separate file completely.
+To start out with cogs we're going to abandon the code from the previous sections largely in favour of new commands tailored to cogs. First, I'll show how to make a cog still in the main file of the bot, then I'll show you how to move it into a separate file completely.
 
-First, as with the previous samples, we need to import the commands module of discord&#46;py and create a bot:
+Firstly, as with the previous samples, we need to import the commands module of discord&#46;py and create a bot:
 
 ```py
 from discord.ext import commands
@@ -63,7 +63,7 @@ bot = commands.Bot(command_prefix="!")
 bot.run("your_token_here")
 ```
 
-Basically, we've stripped most of the logic out because we're going to move that to another file, somecomamnds&#46;py, so let's create that file and add some code:
+Basically, we've stripped most of the logic out because we're going to move that to another file, somecommands&#46;py, so let's create that file and add some code:
 
 ```py
 from discord.ext import commands # Again, we need this imported
