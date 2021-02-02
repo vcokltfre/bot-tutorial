@@ -13,6 +13,7 @@ Preamble over, you can start learning now in [Part 1 - Creating a Bot User,](doc
 - [Part 3 - Hello, World!](docs/part3.md)
 - [Part 4 - A Ping Command](docs/part4.md)
 - [Part 5 - Cogs](docs/part5.md)
+- [Part 6 - Online!](docs/part6.md)
 
 ## Issues
 
