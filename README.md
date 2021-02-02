@@ -25,6 +25,8 @@ If you find an issue in this tutorial please create an issue on the repo so that
 ## Planned Parts
 
 - [ ] All About Embeds
+- [ ] Adding Reactions
+- [ ] Waiting for Events
 - [ ] Command Permissions
 - [ ] More Decorators
 - [ ] Runtime Eval With Jishaku
