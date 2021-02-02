@@ -17,6 +17,7 @@ Preamble over, you can start learning now in [Part 1 - Creating a Bot User,](doc
 - [Part 7 - Welcome](docs/part7.md)
 - [Part 8 - A Better Ping Command](docs/part8.md)
 - [Part 9 - What Did That Message Say?](docs/part9.md)
+- [Part 10 - All About Embeds](docs/part10.md)
 
 ## Issues
 
@@ -24,7 +25,7 @@ If you find an issue in this tutorial please create an issue on the repo so that
 
 ## Planned Parts
 
-- [ ] All About Embeds
+- [x] All About Embeds
 - [ ] Adding Reactions
 - [ ] Waiting for Events
 - [ ] Command Permissions
