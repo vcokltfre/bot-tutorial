@@ -11,6 +11,7 @@ Preamble over, you can start learning now in [Part 1 - Creating a Bot User,](doc
 - [Part 1 - Creating a Bot User](docs/part1.md)
 - [Part 2 - An Overview of Discord](docs/part2.md)
 - [Part 3 - Hello, World!](docs/part3.md)
+- [Part 4 - A Ping Command](docs/part4.md)
 
 ## Issues
 
