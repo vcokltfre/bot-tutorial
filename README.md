@@ -34,3 +34,11 @@ If you find an issue in this tutorial please [create an issue on the repo so tha
 - [ ] More Decorators
 - [ ] Runtime Eval With Jishaku
 - [ ] Custom Decorators
+
+## Credits
+
+|Name|Contribution|Link|
+|---|---|---|
+|vcokltfre|Me, I made the tutorial :P|[Github](https://github.com/vcokltfre)|
+|Ares|Helped me understand how to get this onto pages|[Github](https://github.com/anand2312)|
+|Rapptz/Danny|Made the discord&#46;py library|[Github](https://github.com/Rapptz)|
