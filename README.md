@@ -22,7 +22,7 @@ Preamble over, you can start learning now in [Part 1 - Creating a Bot User,](doc
 
 ## Issues
 
-If you find an issue in this tutorial please create an issue on the repo so that I can rectify it.
+If you find an issue in this tutorial please [create an issue on the repo so that I can rectify it.](https://github.com/vcokltfre/bot-tutorial/issues)
 
 ## Planned Parts
 
