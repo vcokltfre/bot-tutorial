@@ -46,4 +46,4 @@ At this point, your bot should be entirely functional, and if you start it up in
 
 ![Hello World](https://github.com/vcokltfre/bot-tutorial/raw/master/images/hello_world.png "Hello World")
 
-Now that you've got the basic bot running, you're ready to move onto [Part 4 - A Ping Command](./part4.md), or you can take a [look at the full code for this part.](../code/part3.py)
+Now that you've got the basic bot running, you're ready to move onto [Part 4 - A Ping Command](./part04.md), or you can take a [look at the full code for this part.](../code/part3.py)

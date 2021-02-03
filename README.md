@@ -8,15 +8,15 @@ Preamble over, you can start learning now in [Part 1 - Creating a Bot User,](doc
 
 ## Index
 
-- [Part 1 - Creating a Bot User](docs/part1.md)
-- [Part 2 - An Overview of Discord](docs/part2.md)
-- [Part 3 - Hello, World!](docs/part3.md)
-- [Part 4 - A Ping Command](docs/part4.md)
-- [Part 5 - Cogs](docs/part5.md)
-- [Part 6 - Online!](docs/part6.md)
-- [Part 7 - Welcome](docs/part7.md)
-- [Part 8 - A Better Ping Command](docs/part8.md)
-- [Part 9 - What Did That Message Say?](docs/part9.md)
+- [Part 1 - Creating a Bot User](docs/part01.md)
+- [Part 2 - An Overview of Discord](docs/part02.md)
+- [Part 3 - Hello, World!](docs/part03.md)
+- [Part 4 - A Ping Command](docs/part04.md)
+- [Part 5 - Cogs](docs/part05.md)
+- [Part 6 - Online!](docs/part06.md)
+- [Part 7 - Welcome](docs/part07.md)
+- [Part 8 - A Better Ping Command](docs/part08.md)
+- [Part 9 - What Did That Message Say?](docs/part09.md)
 - [Part 10 - All About Embeds](docs/part10.md)
 - [Part 11 - Cooldowns](docs/part11.md)
 

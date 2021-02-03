@@ -56,4 +56,4 @@ Note that in this function we dont use ctx, but it still needs to be part of the
 
 Now you should be able to test it out and see the bot set it's status to something you type in, if you run a command like !setstatus Minecraft.
 
-And that's the end of part 6! You can now move on to [Part 7 - Welcome](./part7.md), or you can take a [look at the full code for this part.](../code/part6/somecommands.py)
+And that's the end of part 6! You can now move on to [Part 7 - Welcome](./part07.md), or you can take a [look at the full code for this part.](../code/part6/somecommands.py)

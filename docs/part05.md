@@ -98,4 +98,4 @@ bot.load_extension("somecommands") # Note, we don't need the .py file extension
 bot.run("your_token_here")
 ```
 
-That's it for the basics of cogs, you now know how to create a cog, create commands in that cog, and then load the cog into the bot! Now you're ready to move onto [Part 6 - Online!](./part6.md), or you can take a look at the full code for this part using [one file](../code/part5/one_file.py) or [multiple files](../code/part5/multiple_files/bot.py).
+That's it for the basics of cogs, you now know how to create a cog, create commands in that cog, and then load the cog into the bot! Now you're ready to move onto [Part 6 - Online!](./part06.md), or you can take a look at the full code for this part using [one file](../code/part5/one_file.py) or [multiple files](../code/part5/multiple_files/bot.py).

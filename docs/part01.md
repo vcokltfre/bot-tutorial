@@ -40,7 +40,7 @@ Finally, you can copy the URL that the box above gives you and paste it into you
 
 That's it! You've created your very own bot user on Discord. Now you just have to do the fun bit - creating functionality, after all, what's a bot without commands or functionality?
 
-Please read the note below, and then you can move onto [Part 2 - An Overview of Discord.](./part2.md)
+Please read the note below, and then you can move onto [Part 2 - An Overview of Discord.](./part02.md)
 
 ### A quick note on tokens:
 
