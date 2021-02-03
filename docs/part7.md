@@ -4,7 +4,7 @@ Ok, so far we've learned how to make a bot, add commands, use cogs, and change t
 
 To start out, we'll once again use the same code from the previous part and add to that. First, we have a modification we need to make to the bot&#46;py file. Up until this point we've been using the default gateway intents that discord&#46;py sends to the gateway - which is all except the privileged intents (guild members and guild presences).
 
-Before we can proceed to modify the code, we need to enable these privileged intents on the Discord developer portal. Go to you'r bot's bot page on the portal, and scroll down to the privileged intents section:
+Before we can proceed to modify the code, we need to enable these privileged intents on the Discord developer portal. Go to your bot's bot page on the portal, and scroll down to the privileged intents section:
 
 ![Privileged Intents](https://github.com/vcokltfre/bot-tutorial/raw/master/images/privileged_intents.png "Privileged Intents")
 
