@@ -85,3 +85,5 @@ embed.set_footer(text="Wow! A footer!", icon_url="https://cdn.discordapp.com/emo
 Remember that you need to send the embed to a channel too. This means you need to call send(embed=embed) on a messageable object, for example a TextChannel object (i.e. message.channel.send) or a Context object (ctx.send) or the embed will not be sent.
 
 There are a few more things that haven't been covered here, but they're generally less commonly used, and if you want to learn more about them, I recommend you [read the discord.py docs on embeds.](https://discordpy.readthedocs.io/en/latest/api.html#embed) That's it for this part, you can now move on to [Part 11 - Cooldowns.](./part11.md)
+
+##### [Back to the main page](../README.md)

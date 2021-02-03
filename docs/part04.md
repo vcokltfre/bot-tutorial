@@ -33,3 +33,5 @@ It's that simple, you've added another command, go ahead and run the bot to try 
 ![Ping Pong](https://github.com/vcokltfre/bot-tutorial/raw/master/images/ping_pong.png "Ping Pong")
 
 Well done! You're 4 parts in already, fortunately there's a lot more to learn! You can now move on to [Part 5 - Cogs](./part05.md), or you can take a [look at the full code for this part.](../code/part4.py)
+
+##### [Back to the main page](../README.md)

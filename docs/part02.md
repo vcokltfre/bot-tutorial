@@ -37,3 +37,5 @@ In Discord there are a few special words for things which we need to understand 
 |`member`|A Discord user, with guild context. You'll only receive members if you have the guild members gateway intent enabled, which will be explained later.|
 
 ### And that's pretty much it for this part of the tutorial. I hope this has given you at least some useful knowledge about roughly how Discord works, and now you can move on to [Part 3 - Hello, World!](./part03.md)
+
+##### [Back to the main page](../README.md)

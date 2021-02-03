@@ -33,3 +33,5 @@ We set start_time to the time, then we send a message saying that we're testing 
 Now we see a new function we haven't used before, editing an existing message. Unlike sending a message, we need to specify that we're editing the content of the message. As with the previous ping command we show the websocket latency, but now we also show the latency to the API, calculated in much the same way.
 
 That's it for this part of the tutorial, not a very long part but now you know how to edit messages, which can be quite useful. You can now move on to [Part 9 - What Did That Message Say?](./part09.md)
+
+##### [Back to the main page](../README.md)
