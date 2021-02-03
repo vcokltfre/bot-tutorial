@@ -31,7 +31,7 @@ async def hello_world(ctx: commands.Context):
 That's quite a lot to take in, even if you're quite familiar with Python, so allow me to explain what each piece of it does:
 
 - `@bot.command(name="hello")` is a decorator that converts the function below it into a command that you can run from Discord.
-- `async def hello_world(ctx: commands.Context):` defines a hello_world function that takes 1 argument - ctx - which is a Context object that's passed with **every** command. All commands will be passed a Context object as their first argument.
+- `async def hello_world(ctx: commands.Context):` defines a hello_world function that takes 1 argument - ctx - which is a Context object that's passed with **every** command. All commands will be passed a [Context](https://discordpy.readthedocs.io/en/latest/ext/commands/api.html#discord.ext.commands.Context) object as their first argument.
 - `await ctx.send("Hello, world!")` makes an API call to Discord to send a message to the channel the command was run in with the content "Hello, world!"
 
 Next, we need to run the bot with its token that you got from the developer portal in [part 1](./part1.md):
