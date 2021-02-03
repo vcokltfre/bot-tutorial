@@ -49,11 +49,11 @@ embed = discord.Embed(title="Hello, world!", description=":D", colour=0x87CEEB)
 embed.set_author(name="vcokltfre", icon_url="https://avatars.githubusercontent.com/u/16879430")
 ```
 
-There we go, it's starting to look much nicer and more informative and full now isn't it?
+There we go, it's starting to look much nicer and more informative and full now, isn't it?
 
 ![Embed](https://github.com/vcokltfre/bot-tutorial/raw/master/images/embed_4.png "Embed")
 
-But there's still more that we can do! Embeds have a whole lot to offer to make an otherwise bland text chat more rich. Let's add some fields to show information. In this example it will be static information but you can always replace it with dynamic content (think bot ping perhaps? I'll leave that as an exercise to the reader.)
+But there's still more that we can do! Embeds have a whole lot to offer to make an otherwise bland text chat more rich. Let's add some fields to show information. In this example it will be static information, but you can always replace it with dynamic content (think bot ping perhaps? I'll leave that as an exercise to the reader.)
 
 ```py
 embed = discord.Embed(title="Hello, world!", description=":D", colour=0x87CEEB)
@@ -82,4 +82,4 @@ embed.set_footer(text="Wow! A footer!", icon_url="https://cdn.discordapp.com/emo
 
 ![Embed](https://github.com/vcokltfre/bot-tutorial/raw/master/images/embed_6.png "Embed")
 
-There are a few more things that haven't been covered here, but they're generally less commonly used, and if you want to learn more about them I recommend you [read the discord.py docs on embeds.](https://discordpy.readthedocs.io/en/latest/api.html#embed) That's it for this part, you can now move on to [Part 11 - Adding Reactions.](./part11.md)
+There are a few more things that haven't been covered here, but they're generally less commonly used, and if you want to learn more about them, I recommend you [read the discord.py docs on embeds.](https://discordpy.readthedocs.io/en/latest/api.html#embed) That's it for this part, you can now move on to [Part 11 - Adding Reactions.](./part11.md)
