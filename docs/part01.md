@@ -46,6 +46,6 @@ Please read the note below, and then you can move onto [Part 2 - An Overview of 
 
 You should make an effort to keep your token safe at all times. This means not sharing it with anyone or accidentally uploading it in code samples. If someone gains access to your bot's token they then have full control of the bot, and can perform actions with it that you may not want. If you believe that your bot's token was leaked, be sure to go to it's developer portal page and click the `Regenerate` button to regenerate the token so that nobody can use the old one.
 
-One common method used - and a recommended method - is using .env files to store credentials for projects, such as bot or API tokens. You can learn more about .env files and how to use them in Python [here.](https://pypi.org/project/python-dotenv/)
+You can find out how best to store your token in [this bonus tutorial part.](./tokens.md)
 
 ##### [Back to the main page](../README.md)
