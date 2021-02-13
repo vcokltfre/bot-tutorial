@@ -100,4 +100,37 @@ bot.run("your_token_here")
 
 That's it for the basics of cogs, you now know how to create a cog, create commands in that cog, and then load the cog into the bot! Now you're ready to move onto [Part 6 - Online!](./part06.md), or you can take a [look at the full code for this part.](https://github.com/vcokltfre/bot-tutorial/tree/master/code/part5)
 
+## Extra reading
+
+discord&#46;py actually provides us with a way to easily create new bots and cogs through its module's CLI. As a rough overwiew it provides the commands newbot and newcog, which auto generate bots and cogs respectively.
+
+### newbot
+
+This creates a new bot, by default in the current directory, with a given name. The avilable options are:
+
+- name [required] : The bot's name.
+- directory [optional, default=.] : The directory to create the bot in.
+- prefix [optional, default=$] : The bot's prefix.
+- sharded [optional] : Whether the bot should use `AutoShardedClient`
+- no-git : Whether the project should be created without a git project.
+
+A command to create a typic new bot might look like this:
+
+`python -m discord newbot TestBot --prefix !`
+
+### newcog
+
+This creates a new cog in the cogs folder of the current directory by default, with a given name. The avilable options are:
+
+- name [required] : The cog's name.
+- directory [optional, default=cogs] : The directory to create the cog in.
+- class-name [optional, default=[name]] : The cog's class name.
+- display-name [optional, default=[name]] : The cog's display name.
+- hide-commands [optional] : Whether to hide the commands in the cog from the help command.
+- full [optional] : Whether to add special cog methods too.
+
+A command to create a typical new cog might look like this:
+
+`python -m discord newcog mycog`
+
 ##### [Back to the main page](../README.md)
