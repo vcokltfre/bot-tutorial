@@ -70,6 +70,6 @@ Finally, we send the embed to the channel. To do this we need to explicitly stat
 
 ![Snipe](https://github.com/vcokltfre/bot-tutorial/raw/master/images/snipe.png "Snipe")
 
-And that's the end of this part, your bot should now be able to undelete messages with an embed. You can now move on to [Part 10 - All About Embeds](./part10.md), or you can take a [look at the full code for this part.](../code/part9/somecommands.py)
+And that's the end of this part, your bot should now be able to undelete messages with an embed. You can now move on to [Part 10 - All About Embeds](./part10.md), or you can take a [look at the full code for this part.](https://github.com/vcokltfre/bot-tutorial/tree/master/code/part9)
 
 ##### [Back to the main page](../README.md)
